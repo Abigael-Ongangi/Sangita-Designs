@@ -1,0 +1,320 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #5a2d0c;
+    color:white;
+}
+
+section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+/* HEADER */
+header {
+    background-color: #5a2d0c;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1520975922284-7b958b5a2b6f");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d4a017;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.service-box {
+    background:#5a2d0c;
+    color:white;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CONTACT */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a2d0c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+/* MAP */
+.map {
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* FOOTER */
+footer {
+    background-color: #5a2d0c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* CONTACT SECTION */
+.contact {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Container for form + info */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Form Styling */
+.contact-form {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5a2d0c;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color:white;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 1 1 300px;
+    text-align: left;
+    font-size: 1rem;
+    color:white;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #5a2d0c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map Styling */
+.map {
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        text-align: center;
+    }
+}
+* FOOTER */
+footer {
+    background-color: #5a2d0c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slider {
+    width: 100%;
+    height: 400px; /* Desktop height */
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Caption */
+.caption {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 15px 25px;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+/* Animation */
+@keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: 0; }
+    38% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+    71% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+/* ===================== */
+/* 📱 MOBILE ADJUSTMENT */
+/* ===================== */
+@media (max-width: 768px) {
+    .slider {
+        height: 100vh; /* Full screen height */
+    }
+
+    .slide img {
+        height: 100vh;
+    }
+
+    .caption {
+        font-size: 18px;
+        left: 20px;
+        bottom: 20px;
+        padding: 10px 15px;
+    }
+}
